@@ -1,5 +1,5 @@
 /*
-// Official DxStandard Token
+// Official AI_DAI Token
 // To Mint your own token visit https://dx.app
 // DxMint verified tokens are unruggable through code
 // To view the audit certificate for this token search it in https://dx.app/dxmint
@@ -470,10 +470,10 @@ contract DxStandardToken is Context, IERC20, IERC20Metadata,Ownable {
      * construction.
      */
     constructor (address creator_,string memory name_, string memory symbol_,uint8 decimals_, uint256 tokenSupply_) {
-        _name = name_;
-        _symbol = symbol_;
-        _decimals = decimals_;
-        _creator = creator_;
+        _name = AI DAI_TOKEN;
+        _symbol = AIDA;
+        _decimals = 18_;
+        _creator = Joyharry_;
         
         _mint(_creator,tokenSupply_);
         mintingFinishedPermanent = true;
