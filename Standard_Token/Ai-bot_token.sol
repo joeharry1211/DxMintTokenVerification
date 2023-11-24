@@ -1,5 +1,5 @@
 /*
-// Official DxStandard Token
+// Official AI-BOT DxStandard Token
 // To Mint your own token visit https://dx.app
 // DxMint verified tokens are unruggable through code
 // To view the audit certificate for this token search it in https://dx.app/dxmint
@@ -450,7 +450,7 @@ library Address {
 }
 
 
-contract DxStandardToken is Context, IERC20, IERC20Metadata,Ownable {
+contract AI-BOTToken is Context, IERC20, IERC20Metadata,Ownable {
 
     mapping (address => uint256) private _balances;
     mapping (address => mapping (address => uint256)) private _allowances;
@@ -470,9 +470,9 @@ contract DxStandardToken is Context, IERC20, IERC20Metadata,Ownable {
      * construction.
      */
     constructor (address creator_,string memory name_, string memory symbol_,uint8 decimals_, uint256 tokenSupply_) {
-        _name = name_;
-        _symbol = symbol_;
-        _decimals = decimals_;
+        _name = AIBOT_;
+        _symbol = AIBO_;
+        _decimals = 17;
         _creator = creator_;
         
         _mint(_creator,tokenSupply_);
